@@ -163,6 +163,42 @@ class _FirstPricingState extends State<FirstPricing> {
           ),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Color(0xff6050E7),
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Padding(
+              padding: const EdgeInsets.only(
+                top: 15,
+                left: 30,
+              ),
+              child: Text(
+                'Upgrade Now',
+                style: GoogleFonts.poppins(
+                  color: Colors.white,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Padding(
+              padding: const EdgeInsets.only(
+                top: 15,
+                left: 60,
+              ),
+              child: Image.asset(
+                'assets/right_arrow.png',
+                width: 24,
+              ),
+            ),
+            label: '',
+          ),
+        ],
+      ),
     );
   }
 }
