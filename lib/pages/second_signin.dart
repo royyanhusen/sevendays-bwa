@@ -68,6 +68,51 @@ class SecondSignIn extends StatelessWidget {
                 hintText: 'Password',
               ),
             ),
+            SizedBox(height: 50),
+            Center(
+              child: Container(
+                width: 330,
+                height: 55,
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                      backgroundColor: Color(0xff5468FF),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(60),
+                      )),
+                  onPressed: () {},
+                  child: Text(
+                    "Log In",
+                    style: GoogleFonts.openSans(
+                      color: Color(0xffF8F8F8),
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 16),
+            Center(
+              child: Container(
+                width: 330,
+                height: 55,
+                child: OutlinedButton(
+                  style: OutlinedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(60),
+                    ),
+                  ),
+                  onPressed: () {},
+                  child: Text(
+                    'Create New Account',
+                    style: GoogleFonts.openSans(
+                      color: Color(0xffCFCFCF),
+                      fontSize: 18,
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
